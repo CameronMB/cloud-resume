@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cameron Berry - Resume</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
 </head>
 <body>
     <header>
@@ -13,7 +18,7 @@
         <p>Lexington, KY | (304) 419-2623 | <a href="mailto:berry.cameron.m@gmail.com">berry.cameron.m@gmail.com</a></p>
 
         <!-- Dark Mode Toggle -->
-        <button class="theme-toggle" type="button" title="Toggle theme" aria-label="Toggle theme" onclick="toggleDarkMode()">
+        <button class="theme-toggle" type="button" title="Toggle theme" aria-label="Toggle theme">
             <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="1em" height="1em" fill="currentColor" class="theme-toggle__expand" viewBox="0 0 32 32">
                 <clipPath id="theme-toggle__expand__cutout">
                     <path d="M0-11h25a1 1 0 0017 13v30H0Z" />
@@ -35,18 +40,43 @@
         <h2>Experience</h2>
         <ul>
             <li><strong>DevOps Engineer</strong> - Centauri Health Solutions (2021 - Present)
-                <p>● Designed and deployed cloud infrastructure using Terraform, Ansible, and AWS.</p>
-                <p>● Developed CI/CD pipelines leveraging Jenkins, AWS CodePipeline, and GitHub Actions.</p>
-                <p>● Automated system monitoring and alerting with CloudWatch, and Sumo Logic.</p>
-                <p>● Authored automation scripts in Python, Bash, and PowerShell, improving operational efficiency.</p>
-                <p>● Managed relational and NoSQL databases (PostgreSQL, MySQL, DynamoDB) to ensure reliability.</p>
-                <p>● Led production troubleshooting efforts, working closely with developers and QA teams.</p>
+                <ul class="experience-details">
+                    <li>Designed and deployed cloud infrastructure using Terraform, Ansible, and AWS services.</li>
+                    <li>Developed and optimized CI/CD pipelines with Jenkins, AWS CodePipeline, and GitHub Actions for seamless deployments.</li>
+                    <li>Implemented automated integration test suites for APIs, integrating them into CI/CD pipelines and ad hoc testing via Jenkins.</li>
+                    <li>Enhanced security and compliance by implementing AWS Shield, AWS Config, AWS SSM, and IAM best practices.</li>
+                    <li>Automated system monitoring and alerting using CloudWatch and Sumo Logic, improving observability and incident response.</li>
+                    <li>Authored automation scripts in Python, Bash, and PowerShell to streamline operations and reduce manual effort.</li>
+                    <li>Automated and optimized tasks across multiple products, improving deployment speed, system reliability, and operational efficiency.</li>
+                    <li>Managed relational and NoSQL databases (PostgreSQL, MySQL, DynamoDB, Aurora) to ensure high availability and performance.</li>
+                    <li>Maintained and optimized cloud servers, ensuring stability, security, and cost efficiency.</li>
+                    <li>Led production troubleshooting efforts, collaborating with developers, QA, and support teams to resolve critical issues.</li>
+
+                </ul>
             </li>
             <li><strong>Technical Support Analyst</strong> - Infor (2020 - 2021)
-                <p>● Diagnosed and resolved issues within Infor’s Workforce Management (WFM) application.</p>
-                <p>● Utilized Jenkins and AWS services to create and deploy build artifacts.</p>
-                <p>● Monitored system performance using Grafana, Sumo Logic, and SQL.</p>
-                <p>● Conducted root cause analysis for high-severity incidents and documented fixes.</p>
+                <ul class="experience-details">
+                    <li>Diagnosed and resolved issues within Infor’s Workforce Management (WFM) application, ensuring high customer satisfaction and SLA adherence.</li>
+                    <li>Investigated and replicated customer-reported issues using Apache, WebLogic, WebSphere, PostgreSQL, Aurora, Oracle, and SQL Server.</li>
+                    <li>Debugged and optimized Java-based applications using Eclipse IDE, Groovy, and JavaScript to identify software defects and performance issues.</li>
+                    <li>Provided end-to-end product support, covering installation, configuration, and performance tuning.</li>
+                    <li>Collaborated with R&D, Product Management, and DevOps to resolve software defects, implement enhancements, and improve system reliability.</li>
+                    <li>Developed and deployed build artifacts using Jenkins and AWS services to automate deployments.</li>
+                    <li>Monitored system performance and conducted root cause analysis for high-severity incidents using Grafana, Sumo Logic, and SQL.</li>
+                    <li>Maintained knowledge base documentation and contributed to process improvements for faster issue resolution.</li>
+                    <li>Provided rotational on-call support, ensuring critical incidents were handled promptly.</li>
+                </ul>
+            </li>
+            <li><strong>Research Assistant - National Science Foundation</strong> - Auburn University (2019)
+                <ul class="experience-details">
+                    <li>Conducted research on energy-efficient fog computing and distributed systems as part of an NSF-funded project.</li>
+                    <li>Developed and optimized energy consumption simulations using Java and MATLAB.</li>
+                    <li>Utilized MATLAB for data visualization, analyzing simulation results, and supporting findings in the research paper.</li>
+                    <li>Contributed to <a href="https://github.com/szs0117/PFogSim" target="_blank">PFogSim</a>, an open-source simulator for performance evaluation in fog computing environments.</li>
+                    <li>Debugged and enhanced complex algorithms to improve computational efficiency in real-time simulation models.</li>
+                    <li>Authored and formatted research findings using LaTeX, ensuring professional presentation in academic publications.</li>
+                    <li>Presented findings to faculty and contributed to research publications on computational sustainability.</li>
+                </ul>
             </li>
         </ul>
     </section>
@@ -54,8 +84,10 @@
     <section id="education">
         <h2>Education</h2>
         <p><strong>Marshall University</strong> | B.S. in Computer Science - Minor in Music (Dec. 2019)</p>
-        <p>● GPA: 3.7/4.0</p>
-        <p>● Activities: NSF Undergraduate Researcher, Delta Omicron (President), Drum Major</p>
+        <ul class="experience-details">
+            <li>GPA: 3.7/4.0</li>
+            <li>Activities: NSF Undergraduate Researcher, Delta Omicron (President), Drum Major - Marching Thunder</li>
+        </ul>
     </section>
 
     <section id="certifications">
@@ -67,12 +99,13 @@
 
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>AWS (EC2, EKS, ECS, Lambda, CloudWatch, RDS, IAM, VPC)</li>
-            <li>Terraform, Ansible, CloudFormation</li>
-            <li>CI/CD: Jenkins, GitHub Actions, AWS CodePipeline</li>
-            <li>Python, Bash, Go, PowerShell, Java, C#</li>
-            <li>Monitoring: Grafana, OpenSearch, Splunk, Dynatrace, DataDog</li>
+        <ul class="skills-list">
+            <li><strong>Cloud & Infrastructure:</strong> AWS (EC2, S3, EKS, ECS, Lambda, RDS, Aurora, DynamoDB, CloudWatch, IAM, VPC, Route 53, API Gateway, CloudFront, SSM, Secrets Manager, Amplify, SNS, SQS, Config, SSM, etc.)</li>
+            <li><strong>Infrastructure as Code (IaC):</strong> Terraform, Ansible, AWS CloudFormation</li>
+            <li><strong>CI/CD & Automation:</strong> Jenkins, GitHub Actions, AWS CodePipeline, AWS CodeBuild, AWS Amplify</li>
+            <li><strong>Programming & Scripting:</strong> Python, Java, Bash, Go, PowerShell, C#</li>
+            <li><strong>Monitoring & Logging:</strong> Sumo Logic, Grafana, OpenSearch (ELK Stack), Splunk, Dynatrace, DataDog, CloudWatch Logs</li>
+            <li><strong>Networking & Security:</strong> AWS IAM, VPC, Security Groups, WAF, Load Balancers, VPNs, NGINX</li>
         </ul>
     </section>
 
@@ -84,7 +117,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Cameron Berry. All rights reserved.</p>
+        <p>&copy; 2025 Cameron Berry. All rights reserved.</p>
     </footer>
 
     <script src="script.js" defer></script>
