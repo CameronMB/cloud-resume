@@ -208,28 +208,25 @@ p {
 
 .project-highlights {
     margin: 0.78rem 0 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    padding-left: 1.35rem;
+    list-style: disc;
 }
 
 .project-highlights li {
-    margin: 0;
-    border-radius: 999px;
-    padding: 0.3rem 0.7rem;
-    font-size: 0.87rem;
-    border: 1px solid rgba(79, 117, 255, 0.2);
-    background: rgba(79, 117, 255, 0.1);
+    margin: 0.34rem 0;
     color: #23366a;
 }
 
 .project-links {
-    margin-top: 0.82rem;
-    display: flex;
-    gap: 0.8rem;
-    flex-wrap: wrap;
+    margin-top: 0.9rem;
+}
+
+.project-links .btn-pill {
+    display: inline-flex;
+    border-color: rgba(79, 117, 255, 0.24);
+    background: rgba(79, 117, 255, 0.12);
+    color: #24396f;
+    text-decoration: none;
 }
 
 ul {
@@ -372,10 +369,13 @@ body.dark-mode .btn-pill {
 }
 
 body.dark-mode .hero-meta li,
-body.dark-mode .project-tag,
-body.dark-mode .project-highlights li {
+body.dark-mode .project-tag {
     background: rgba(126, 156, 255, 0.18);
     border-color: rgba(163, 187, 255, 0.35);
+    color: #dbe7ff;
+}
+
+body.dark-mode .project-highlights li {
     color: #dbe7ff;
 }
 
