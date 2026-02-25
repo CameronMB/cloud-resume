@@ -41,7 +41,6 @@ jobs:
 
       - name: Invalidate CloudFront cache (optional)
         if: ${{ vars.CLOUDFRONT_DISTRIBUTION_ID != '' }}
-        continue-on-error: true
         run: |
           aws cloudfront create-invalidation \
             --distribution-id ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }} \
