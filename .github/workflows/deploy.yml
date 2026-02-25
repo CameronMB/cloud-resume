@@ -45,3 +45,21 @@ jobs:
           aws cloudfront create-invalidation \
             --distribution-id ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }} \
             --paths "/*"
+
+      - name: Verify index exists in S3
+        run: |
+          aws s3api head-object \
+            --bucket ${{ vars.S3_BUCKET }} \
+            --key index.html
+
+      - name: Verify CloudFront serves index (optional)
+        if: ${{ vars.CLOUDFRONT_DISTRIBUTION_ID != '' }}
+        run: |
+          DOMAIN=$(aws cloudfront get-distribution \
+            --id ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --query 'Distribution.DomainName' \
+            --output text)
+          echo "Checking https://${DOMAIN}/"
+          CODE=$(curl -sS -o /tmp/resume-index.html -w "%{http_code}" "https://${DOMAIN}/")
+          test "$CODE" = "200"
+          grep -qi "<html" /tmp/resume-index.html
