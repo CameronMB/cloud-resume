@@ -12,113 +12,132 @@
     <link rel="manifest" href="./site.webmanifest" />
 </head>
 <body>
-    <header>
-        <h1>Cameron Berry</h1>
-        <p>Infrastructure Engineer | DevOps Engineer</p>
-        <p>Lexington, KY | (304) 419-2623 | <a href="mailto:berry.cameron.m@gmail.com">berry.cameron.m@gmail.com</a></p>
+    <div class="background-glow" aria-hidden="true"></div>
 
-        <!-- Dark Mode Toggle -->
-        <button class="theme-toggle" type="button" title="Toggle theme" aria-label="Toggle theme">
-            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="1em" height="1em" fill="currentColor" class="theme-toggle__expand" viewBox="0 0 32 32">
-                <clipPath id="theme-toggle__expand__cutout">
-                    <path d="M0-11h25a1 1 0 0017 13v30H0Z" />
-                </clipPath>
-                <g clip-path="url(#theme-toggle__expand__cutout)">
-                    <circle cx="16" cy="16" r="8.4" />
-                    <path d="M18.3 3.2c0 1.3-1 2.3-2.3 2.3s-2.3-1-2.3-2.3S14.7.9 16 .9s2.3 1 2.3 2.3zm-4.6 25.6c0-1.3 1-2.3 2.3-2.3s2.3 1 2.3 2.3-1 2.3-2.3 2.3-2.3-1-2.3-2.3zm15.1-10.5c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3zM3.2 13.7c1.3 0 2.3 1 2.3 2.3s-1 2.3-2.3 2.3S.9 17.3.9 16s1-2.3 2.3-2.3zm5.8-7C9 7.9 7.9 9 6.7 9S4.4 8 4.4 6.7s1-2.3 2.3-2.3S9 5.4 9 6.7zm16.3 21c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3zm2.4-21c0 1.3-1 2.3-2.3 2.3S23 7.9 23 6.7s1-2.3 2.3-2.3 2.4 1 2.4 2.3zM6.7 23C8 23 9 24 9 25.3s-1 2.3-2.3 2.3-2.3-1-2.3-2.3 1-2.3 2.3-2.3z" />
-                </g>
-            </svg>
-        </button>
-    </header>
+    <button class="theme-toggle" type="button" title="Toggle theme" aria-label="Toggle theme">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="1em" height="1em" fill="currentColor" class="theme-toggle__expand" viewBox="0 0 32 32">
+            <clipPath id="theme-toggle__expand__cutout">
+                <path d="M0-11h25a1 1 0 0017 13v30H0Z" />
+            </clipPath>
+            <g clip-path="url(#theme-toggle__expand__cutout)">
+                <circle cx="16" cy="16" r="8.4" />
+                <path d="M18.3 3.2c0 1.3-1 2.3-2.3 2.3s-2.3-1-2.3-2.3S14.7.9 16 .9s2.3 1 2.3 2.3zm-4.6 25.6c0-1.3 1-2.3 2.3-2.3s2.3 1 2.3 2.3-1 2.3-2.3 2.3-2.3-1-2.3-2.3zm15.1-10.5c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3zM3.2 13.7c1.3 0 2.3 1 2.3 2.3s-1 2.3-2.3 2.3S.9 17.3.9 16s1-2.3 2.3-2.3zm5.8-7C9 7.9 7.9 9 6.7 9S4.4 8 4.4 6.7s1-2.3 2.3-2.3S9 5.4 9 6.7zm16.3 21c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3zm2.4-21c0 1.3-1 2.3-2.3 2.3S23 7.9 23 6.7s1-2.3 2.3-2.3 2.4 1 2.4 2.3zM6.7 23C8 23 9 24 9 25.3s-1 2.3-2.3 2.3-2.3-1-2.3-2.3 1-2.3 2.3-2.3z" />
+            </g>
+        </svg>
+    </button>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Experienced Infrastructure/DevOps Engineer with 3+ years of designing, automating, and scaling cloud environments. Skilled in cloud computing best practices, including infrastructure as code (IaC), CI/CD automation, observability, and system resilience. Passionate about optimizing performance, reliability, and scalability to support high-impact applications.</p>
-    </section>
+    <main class="resume-shell">
+        <header class="hero glass-card">
+            <p class="eyebrow">Infrastructure Engineer · DevOps Engineer</p>
+            <h1>Cameron Berry</h1>
+            <p class="summary">Designing resilient cloud platforms, automation-first pipelines, and scalable systems that keep teams shipping with confidence.</p>
+            <ul class="hero-meta">
+                <li>Lexington, KY</li>
+                <li><a href="tel:+13044192623">(304) 419-2623</a></li>
+                <li><a href="mailto:berry.cameron.m@gmail.com">berry.cameron.m@gmail.com</a></li>
+            </ul>
+        </header>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>DevOps Engineer</strong> - Centauri Health Solutions (2021 - Present)
-                <ul class="experience-details">
-                    <li>Designed and deployed cloud infrastructure using Terraform, Ansible, and AWS services.</li>
-                    <li>Developed and optimized CI/CD pipelines with Jenkins, AWS CodePipeline, and GitHub Actions for seamless deployments.</li>
-                    <li>Implemented automated integration test suites for APIs, integrating them into CI/CD pipelines and ad hoc testing via Jenkins.</li>
-                    <li>Enhanced security and compliance by implementing AWS Shield, AWS Config, AWS SSM, and IAM best practices.</li>
-                    <li>Automated system monitoring and alerting using CloudWatch and Sumo Logic, improving observability and incident response.</li>
-                    <li>Authored automation scripts in Python, Bash, and PowerShell to streamline operations and reduce manual effort.</li>
-                    <li>Automated and optimized tasks across multiple products, improving deployment speed, system reliability, and operational efficiency.</li>
-                    <li>Managed relational and NoSQL databases (PostgreSQL, MySQL, DynamoDB, Aurora) to ensure high availability and performance.</li>
-                    <li>Maintained and optimized cloud servers, ensuring stability, security, and cost efficiency.</li>
-                    <li>Led production troubleshooting efforts, collaborating with developers, QA, and support teams to resolve critical issues.</li>
+        <section id="about" class="glass-card">
+            <h2>About Me</h2>
+            <p>Experienced Infrastructure/DevOps Engineer with 3+ years of designing, automating, and scaling cloud environments. Skilled in cloud computing best practices, including infrastructure as code (IaC), CI/CD automation, observability, and system resilience. Passionate about optimizing performance, reliability, and scalability to support high-impact applications.</p>
+        </section>
 
-                </ul>
-            </li>
-            <li><strong>Technical Support Analyst</strong> - Infor (2020 - 2021)
-                <ul class="experience-details">
-                    <li>Diagnosed and resolved issues within Infor’s Workforce Management (WFM) application, ensuring high customer satisfaction and SLA adherence.</li>
-                    <li>Investigated and replicated customer-reported issues using Apache, WebLogic, WebSphere, PostgreSQL, Aurora, Oracle, and SQL Server.</li>
-                    <li>Debugged and optimized Java-based applications using Eclipse IDE, Groovy, and JavaScript to identify software defects and performance issues.</li>
-                    <li>Provided end-to-end product support, covering installation, configuration, and performance tuning.</li>
-                    <li>Collaborated with R&D, Product Management, and DevOps to resolve software defects, implement enhancements, and improve system reliability.</li>
-                    <li>Developed and deployed build artifacts using Jenkins and AWS services to automate deployments.</li>
-                    <li>Monitored system performance and conducted root cause analysis for high-severity incidents using Grafana, Sumo Logic, and SQL.</li>
-                    <li>Maintained knowledge base documentation and contributed to process improvements for faster issue resolution.</li>
-                    <li>Provided rotational on-call support, ensuring critical incidents were handled promptly.</li>
-                </ul>
-            </li>
-            <li><strong>Research Assistant - National Science Foundation</strong> - Auburn University (2019)
-                <ul class="experience-details">
-                    <li>Conducted research on energy-efficient fog computing and distributed systems as part of an NSF-funded project.</li>
-                    <li>Developed and optimized energy consumption simulations using Java and MATLAB.</li>
-                    <li>Utilized MATLAB for data visualization, analyzing simulation results, and supporting findings in the research paper.</li>
-                    <li>Contributed to <a href="https://github.com/szs0117/PFogSim" target="_blank">PFogSim</a>, an open-source simulator for performance evaluation in fog computing environments.</li>
-                    <li>Debugged and enhanced complex algorithms to improve computational efficiency in real-time simulation models.</li>
-                    <li>Authored and formatted research findings using LaTeX, ensuring professional presentation in academic publications.</li>
-                    <li>Presented findings to faculty and contributed to research publications on computational sustainability.</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
+        <section id="experience" class="glass-card">
+            <h2>Experience</h2>
+            <ul class="timeline">
+                <li class="role-card">
+                    <div class="role-header">
+                        <h3>DevOps Engineer</h3>
+                        <p>Centauri Health Solutions · 2021 - Present</p>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Designed and deployed cloud infrastructure using Terraform, Ansible, and AWS services.</li>
+                        <li>Developed and optimized CI/CD pipelines with Jenkins, AWS CodePipeline, and GitHub Actions for seamless deployments.</li>
+                        <li>Implemented automated integration test suites for APIs, integrating them into CI/CD pipelines and ad hoc testing via Jenkins.</li>
+                        <li>Enhanced security and compliance by implementing AWS Shield, AWS Config, AWS SSM, and IAM best practices.</li>
+                        <li>Automated system monitoring and alerting using CloudWatch and Sumo Logic, improving observability and incident response.</li>
+                        <li>Authored automation scripts in Python, Bash, and PowerShell to streamline operations and reduce manual effort.</li>
+                        <li>Automated and optimized tasks across multiple products, improving deployment speed, system reliability, and operational efficiency.</li>
+                        <li>Managed relational and NoSQL databases (PostgreSQL, MySQL, DynamoDB, Aurora) to ensure high availability and performance.</li>
+                        <li>Maintained and optimized cloud servers, ensuring stability, security, and cost efficiency.</li>
+                        <li>Led production troubleshooting efforts, collaborating with developers, QA, and support teams to resolve critical issues.</li>
+                    </ul>
+                </li>
+                <li class="role-card">
+                    <div class="role-header">
+                        <h3>Technical Support Analyst</h3>
+                        <p>Infor · 2020 - 2021</p>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Diagnosed and resolved issues within Infor’s Workforce Management (WFM) application, ensuring high customer satisfaction and SLA adherence.</li>
+                        <li>Investigated and replicated customer-reported issues using Apache, WebLogic, WebSphere, PostgreSQL, Aurora, Oracle, and SQL Server.</li>
+                        <li>Debugged and optimized Java-based applications using Eclipse IDE, Groovy, and JavaScript to identify software defects and performance issues.</li>
+                        <li>Provided end-to-end product support, covering installation, configuration, and performance tuning.</li>
+                        <li>Collaborated with R&D, Product Management, and DevOps to resolve software defects, implement enhancements, and improve system reliability.</li>
+                        <li>Developed and deployed build artifacts using Jenkins and AWS services to automate deployments.</li>
+                        <li>Monitored system performance and conducted root cause analysis for high-severity incidents using Grafana, Sumo Logic, and SQL.</li>
+                        <li>Maintained knowledge base documentation and contributed to process improvements for faster issue resolution.</li>
+                        <li>Provided rotational on-call support, ensuring critical incidents were handled promptly.</li>
+                    </ul>
+                </li>
+                <li class="role-card">
+                    <div class="role-header">
+                        <h3>Research Assistant - National Science Foundation</h3>
+                        <p>Auburn University · 2019</p>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Conducted research on energy-efficient fog computing and distributed systems as part of an NSF-funded project.</li>
+                        <li>Developed and optimized energy consumption simulations using Java and MATLAB.</li>
+                        <li>Utilized MATLAB for data visualization, analyzing simulation results, and supporting findings in the research paper.</li>
+                        <li>Contributed to <a href="https://github.com/szs0117/PFogSim" target="_blank" rel="noopener noreferrer">PFogSim</a>, an open-source simulator for performance evaluation in fog computing environments.</li>
+                        <li>Debugged and enhanced complex algorithms to improve computational efficiency in real-time simulation models.</li>
+                        <li>Authored and formatted research findings using LaTeX, ensuring professional presentation in academic publications.</li>
+                        <li>Presented findings to faculty and contributed to research publications on computational sustainability.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>Marshall University</strong> | B.S. in Computer Science - Minor in Music (Dec. 2019)</p>
-        <ul class="experience-details">
-            <li>GPA: 3.7/4.0</li>
-            <li>Activities: NSF Undergraduate Researcher, Delta Omicron (President), Drum Major - Marching Thunder</li>
-        </ul>
-    </section>
+        <section id="education" class="glass-card">
+            <h2>Education</h2>
+            <p><strong>Marshall University</strong> · B.S. in Computer Science - Minor in Music (Dec. 2019)</p>
+            <ul class="experience-details">
+                <li>GPA: 3.7/4.0</li>
+                <li>Activities: NSF Undergraduate Researcher, Delta Omicron (President), Drum Major - Marching Thunder</li>
+            </ul>
+        </section>
 
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>AWS Certified Cloud Practitioner</li>
-        </ul>
-    </section>
+        <section id="certifications" class="glass-card">
+            <h2>Certifications</h2>
+            <ul>
+                <li>AWS Certified Cloud Practitioner</li>
+            </ul>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-            <li><strong>Cloud & Infrastructure:</strong> AWS (EC2, S3, EKS, ECS, Lambda, RDS, Aurora, DynamoDB, CloudWatch, IAM, VPC, Route 53, API Gateway, CloudFront, SSM, Secrets Manager, Amplify, SNS, SQS, Config, SSM, etc.)</li>
-            <li><strong>Infrastructure as Code (IaC):</strong> Terraform, Ansible, AWS CloudFormation</li>
-            <li><strong>CI/CD & Automation:</strong> Jenkins, GitHub Actions, AWS CodePipeline, AWS CodeBuild, AWS Amplify</li>
-            <li><strong>Programming & Scripting:</strong> Python, Java, Bash, Go, PowerShell, C#</li>
-            <li><strong>Monitoring & Logging:</strong> Sumo Logic, Grafana, OpenSearch (ELK Stack), Splunk, Dynatrace, DataDog, CloudWatch Logs</li>
-            <li><strong>Networking & Security:</strong> AWS IAM, VPC, Security Groups, WAF, Load Balancers, VPNs, NGINX</li>
-        </ul>
-    </section>
+        <section id="skills" class="glass-card">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Cloud & Infrastructure:</strong> AWS (EC2, S3, EKS, ECS, Lambda, RDS, Aurora, DynamoDB, CloudWatch, IAM, VPC, Route 53, API Gateway, CloudFront, SSM, Secrets Manager, Amplify, SNS, SQS, Config, SSM, etc.)</li>
+                <li><strong>Infrastructure as Code (IaC):</strong> Terraform, Ansible, AWS CloudFormation</li>
+                <li><strong>CI/CD & Automation:</strong> Jenkins, GitHub Actions, AWS CodePipeline, AWS CodeBuild, AWS Amplify</li>
+                <li><strong>Programming & Scripting:</strong> Python, Java, Bash, Go, PowerShell, C#</li>
+                <li><strong>Monitoring & Logging:</strong> Sumo Logic, Grafana, OpenSearch (ELK Stack), Splunk, Dynatrace, DataDog, CloudWatch Logs</li>
+                <li><strong>Networking & Security:</strong> AWS IAM, VPC, Security Groups, WAF, Load Balancers, VPNs, NGINX</li>
+            </ul>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:berry.cameron.m@gmail.com">berry.cameron.m@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/CameronMB">CameronMB</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/cameronmberry/">Cameron Berry</a></p>
-    </section>
+        <section id="contact" class="glass-card">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:berry.cameron.m@gmail.com">berry.cameron.m@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/CameronMB" target="_blank" rel="noopener noreferrer">CameronMB</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/cameronmberry/" target="_blank" rel="noopener noreferrer">Cameron Berry</a></p>
+        </section>
 
-    <footer>
-        <p>&copy; 2025 Cameron Berry. All rights reserved.</p>
-    </footer>
+        <footer class="glass-card footer-card">
+            <p>&copy; 2025 Cameron Berry. All rights reserved.</p>
+        </footer>
+    </main>
 
     <script src="script.js" defer></script>
 </body>
