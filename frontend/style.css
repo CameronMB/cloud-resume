@@ -1,14 +1,14 @@
 :root {
-    --bg: #f3f5fb;
-    --bg-soft: #eaf0ff;
-    --surface: rgba(255, 255, 255, 0.7);
+    --bg: #f3f6ff;
+    --bg-soft: #e9f0ff;
+    --surface: rgba(255, 255, 255, 0.72);
     --surface-border: rgba(255, 255, 255, 0.65);
-    --text: #192235;
-    --muted: #4f5e7a;
-    --heading: #101a2d;
+    --text: #172239;
+    --muted: #4c5f84;
+    --heading: #0e1830;
     --accent: #4f75ff;
-    --accent-strong: #3558d7;
-    --shadow: 0 18px 50px rgba(47, 63, 118, 0.14);
+    --accent-strong: #2f54da;
+    --shadow: 0 20px 52px rgba(38, 55, 115, 0.15);
 }
 
 * {
@@ -23,11 +23,11 @@ body {
 
 body {
     font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    background: radial-gradient(1200px 700px at 5% -5%, #dfe8ff 0%, transparent 60%),
-        radial-gradient(1000px 600px at 105% 10%, #e2f8ff 0%, transparent 55%),
+    background: radial-gradient(1300px 780px at 5% -5%, #dce8ff 0%, transparent 60%),
+        radial-gradient(1000px 620px at 108% 8%, #dff7ff 0%, transparent 55%),
         linear-gradient(165deg, var(--bg) 0%, var(--bg-soft) 100%);
     color: var(--text);
-    line-height: 1.65;
+    line-height: 1.68;
     transition: background 0.35s ease, color 0.35s ease;
     min-height: 100vh;
 }
@@ -35,15 +35,15 @@ body {
 .background-glow {
     position: fixed;
     inset: 0;
-    background: radial-gradient(circle at 15% 20%, rgba(103, 136, 255, 0.18), transparent 35%),
-        radial-gradient(circle at 85% 15%, rgba(81, 198, 255, 0.14), transparent 33%);
+    background: radial-gradient(circle at 16% 20%, rgba(91, 128, 255, 0.22), transparent 38%),
+        radial-gradient(circle at 82% 14%, rgba(86, 202, 255, 0.16), transparent 35%);
     pointer-events: none;
     z-index: -1;
 }
 
 .resume-shell {
-    width: min(1000px, calc(100% - 2rem));
-    margin: 3.5rem auto 2rem;
+    width: min(1020px, calc(100% - 2rem));
+    margin: 3.4rem auto 2rem;
     display: grid;
     gap: 1.15rem;
 }
@@ -53,15 +53,15 @@ body {
     border: 1px solid var(--surface-border);
     border-radius: 20px;
     box-shadow: var(--shadow);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
     padding: 1.5rem 1.4rem;
     transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.3s ease;
 }
 
 .glass-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 22px 50px rgba(47, 63, 118, 0.18);
+    box-shadow: 0 24px 58px rgba(38, 55, 115, 0.18);
 }
 
 .hero {
@@ -85,50 +85,137 @@ h3 {
 }
 
 h1 {
-    margin: 0.4rem 0 0.6rem;
-    font-size: clamp(1.9rem, 4vw, 2.9rem);
+    margin: 0.45rem 0 0.65rem;
+    font-size: clamp(2rem, 4.2vw, 3rem);
     letter-spacing: -0.02em;
 }
 
 h2 {
-    margin: 0 0 0.85rem;
-    font-size: clamp(1.18rem, 2.4vw, 1.45rem);
+    margin: 0 0 0.9rem;
+    font-size: clamp(1.2rem, 2.6vw, 1.5rem);
     border-bottom: 1px solid rgba(53, 88, 215, 0.18);
     padding-bottom: 0.55rem;
 }
 
 h3 {
     margin: 0;
-    font-size: clamp(1.02rem, 2vw, 1.2rem);
+    font-size: clamp(1.03rem, 2vw, 1.2rem);
 }
 
 p {
     margin: 0;
-    color: var(--text);
 }
 
 .summary {
-    max-width: 70ch;
+    max-width: 72ch;
     color: var(--muted);
+    font-size: 1.03rem;
+}
+
+.hero-actions {
+    margin-top: 1.15rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.62rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    padding: 0.56rem 0.9rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.92rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--accent-strong), var(--accent));
+    color: #f8fbff;
+    box-shadow: 0 8px 20px rgba(47, 84, 218, 0.32);
+}
+
+.btn-primary:hover {
+    color: #ffffff;
+}
+
+.btn-secondary {
+    border-color: rgba(59, 88, 191, 0.24);
+    background: rgba(255, 255, 255, 0.6);
+    color: #23366a;
 }
 
 .hero-meta {
-    margin: 1.1rem 0 0;
+    margin: 1rem 0 0;
     padding: 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.55rem;
+    gap: 0.52rem;
 }
 
 .hero-meta li {
     background: rgba(79, 117, 255, 0.12);
-    border: 1px solid rgba(79, 117, 255, 0.25);
+    border: 1px solid rgba(79, 117, 255, 0.24);
     color: #24396f;
     border-radius: 999px;
-    padding: 0.36rem 0.8rem;
-    font-size: 0.92rem;
+    padding: 0.35rem 0.78rem;
+    font-size: 0.91rem;
     font-weight: 550;
+}
+
+.featured-card {
+    border: 1px solid rgba(79, 117, 255, 0.24);
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.66);
+    border: 1px solid rgba(86, 113, 210, 0.18);
+    border-radius: 14px;
+    padding: 1rem;
+}
+
+.project-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+    margin-bottom: 0.45rem;
+}
+
+.project-tag {
+    border-radius: 999px;
+    padding: 0.24rem 0.62rem;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    color: #23366a;
+    border: 1px solid rgba(59, 88, 191, 0.25);
+    background: rgba(79, 117, 255, 0.12);
+}
+
+.project-highlights {
+    margin: 0.65rem 0 0;
+    padding-left: 1.2rem;
+}
+
+.project-highlights li {
+    margin: 0.34rem 0;
+}
+
+.project-links {
+    margin-top: 0.72rem;
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
 }
 
 ul {
@@ -144,14 +231,14 @@ ul {
 
 .role-card {
     list-style: none;
-    background: rgba(255, 255, 255, 0.65);
+    background: rgba(255, 255, 255, 0.67);
     border: 1px solid rgba(86, 113, 210, 0.16);
     border-radius: 14px;
     padding: 1rem;
 }
 
 .role-header {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.58rem;
 }
 
 .role-header p {
@@ -170,6 +257,10 @@ ul {
     color: #273347;
 }
 
+.compact-list li {
+    margin: 0.2rem 0;
+}
+
 .skills-list {
     list-style: none;
     display: grid;
@@ -177,7 +268,7 @@ ul {
 }
 
 .skills-list li {
-    background: rgba(255, 255, 255, 0.56);
+    background: rgba(255, 255, 255, 0.58);
     border: 1px solid rgba(86, 113, 210, 0.14);
     border-radius: 12px;
     padding: 0.72rem 0.88rem;
@@ -206,8 +297,8 @@ a:hover {
     width: 3.2rem;
     height: 3.2rem;
     border-radius: 999px;
-    border: 1px solid rgba(86, 113, 210, 0.2);
-    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(86, 113, 210, 0.22);
+    background: rgba(255, 255, 255, 0.78);
     color: #1c2a4d;
     box-shadow: 0 10px 30px rgba(30, 42, 78, 0.2);
     cursor: pointer;
@@ -259,12 +350,15 @@ body.dark-mode .theme-toggle__expand {
 }
 
 body.dark-mode .role-card,
-body.dark-mode .skills-list li {
+body.dark-mode .skills-list li,
+body.dark-mode .project-card,
+body.dark-mode .btn-secondary {
     background: rgba(15, 22, 38, 0.7);
     border-color: rgba(130, 155, 242, 0.25);
 }
 
-body.dark-mode .hero-meta li {
+body.dark-mode .hero-meta li,
+body.dark-mode .project-tag {
     background: rgba(126, 156, 255, 0.18);
     border-color: rgba(163, 187, 255, 0.35);
     color: #dbe7ff;
@@ -293,12 +387,29 @@ body.dark-mode .experience-details li {
         height: 2.95rem;
     }
 
-    .hero-meta {
+    .hero-meta,
+    .hero-actions {
         gap: 0.45rem;
     }
 
-    .hero-meta li {
+    .hero-meta li,
+    .hero-actions .btn {
         width: 100%;
         text-align: center;
+    }
+
+    .project-head {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
     }
 }
