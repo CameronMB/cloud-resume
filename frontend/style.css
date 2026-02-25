@@ -368,6 +368,12 @@ body.dark-mode .btn-pill {
     border-color: rgba(130, 155, 242, 0.25);
 }
 
+body.dark-mode .project-links .btn-pill {
+    background: rgba(126, 156, 255, 0.18);
+    border-color: rgba(163, 187, 255, 0.35);
+    color: #dbe7ff;
+}
+
 body.dark-mode .hero-meta li,
 body.dark-mode .project-tag {
     background: rgba(126, 156, 255, 0.18);
